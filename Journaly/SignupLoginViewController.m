@@ -66,6 +66,7 @@
 // Sent to the delegate when the log in attempt fails.
 - (void)logInViewController:(PFLogInViewController *)logInController didFailToLogInWithError:(NSError *)error {
     NSLog(@"Failed to log in...");
+    [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Login Failed", nil) message:NSLocalizedString(@"Incorrect username or password. Please check your login information and try again.", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil] show];
 }
 
 // Sent to the delegate when the log in screen is dismissed.
@@ -105,6 +106,8 @@
 // Sent to the delegate when the sign up attempt fails.
 - (void)signUpViewController:(PFSignUpViewController *)signUpController didFailToSignUpWithError:(NSError *)error {
     NSLog(@"Failed to sign up...");
+    [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Signup Failed", nil) message:NSLocalizedString(@"Invalid username or password. Please check your information and try again.", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"OK", nil) otherButtonTitles:nil] show];
+
 }
 
 // Sent to the delegate when the sign up screen is dismissed.
@@ -117,7 +120,8 @@
 
 - (IBAction)logOutButtonTapAction:(id)sender {
     [PFUser logOut];
-    [self.navigationController popViewControllerAnimated:YES];
+//    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popToRootViewControllerAnimated:NO];
 }
 
 @end
