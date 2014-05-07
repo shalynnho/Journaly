@@ -7,7 +7,7 @@
 //
 
 #import "SHOAppDelegate.h"
-#import <Parse/Parse.h>
+#import "SignupLoginViewController.h"
 
 @implementation SHOAppDelegate
 
@@ -19,6 +19,15 @@
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     // Override point for customization after application launch.
+    // Set default ACLs
+    PFACL *defaultACL = [PFACL ACL];
+    [defaultACL setPublicReadAccess:YES];
+    [PFACL setDefaultACL:defaultACL withAccessForCurrentUser:YES];
+    
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[SignupLoginViewController alloc] init]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 							

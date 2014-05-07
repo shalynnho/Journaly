@@ -33,13 +33,14 @@
 		4013E2EF191AD171009A35E2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4013E2EE191AD171009A35E2 /* SystemConfiguration.framework */; };
 		4013E2F3191ADEE6009A35E2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4013E2F1191ADEE6009A35E2 /* Icon.png */; };
 		4013E2F4191ADEE6009A35E2 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4013E2F2191ADEE6009A35E2 /* Icon@2x.png */; };
-		4013E2F9191AE054009A35E2 /* DefaultSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013E2F7191AE054009A35E2 /* DefaultSettingsViewController.m */; };
-		4013E2FA191AE054009A35E2 /* DefaultSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4013E2F8191AE054009A35E2 /* DefaultSettingsViewController.xib */; };
+		4013E2F9191AE054009A35E2 /* SignupLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013E2F7191AE054009A35E2 /* SignupLoginViewController.m */; };
+		4013E2FA191AE054009A35E2 /* SignupLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4013E2F8191AE054009A35E2 /* SignupLoginViewController.xib */; };
 		4013E2FC191AE1AB009A35E2 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4013E2FB191AE1AB009A35E2 /* Twitter.framework */; };
 		4013E2FE191AE1E1009A35E2 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4013E2FD191AE1E1009A35E2 /* Accounts.framework */; };
 		4013E300191AE23C009A35E2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4013E2FF191AE23C009A35E2 /* AdSupport.framework */; };
 		4013E302191AE24B009A35E2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4013E301191AE24B009A35E2 /* CoreLocation.framework */; };
 		4013E304191AE25E009A35E2 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4013E303191AE25E009A35E2 /* Social.framework */; };
+		4013E30A191AF397009A35E2 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4013E309191AF397009A35E2 /* Logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,14 +86,15 @@
 		4013E2EE191AD171009A35E2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4013E2F1191ADEE6009A35E2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		4013E2F2191ADEE6009A35E2 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		4013E2F6191AE054009A35E2 /* DefaultSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultSettingsViewController.h; sourceTree = "<group>"; };
-		4013E2F7191AE054009A35E2 /* DefaultSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultSettingsViewController.m; sourceTree = "<group>"; };
-		4013E2F8191AE054009A35E2 /* DefaultSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultSettingsViewController.xib; sourceTree = "<group>"; };
+		4013E2F6191AE054009A35E2 /* SignupLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupLoginViewController.h; sourceTree = "<group>"; };
+		4013E2F7191AE054009A35E2 /* SignupLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupLoginViewController.m; sourceTree = "<group>"; };
+		4013E2F8191AE054009A35E2 /* SignupLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupLoginViewController.xib; sourceTree = "<group>"; };
 		4013E2FB191AE1AB009A35E2 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		4013E2FD191AE1E1009A35E2 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		4013E2FF191AE23C009A35E2 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		4013E301191AE24B009A35E2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4013E303191AE25E009A35E2 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		4013E309191AF397009A35E2 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +229,7 @@
 		4013E2F0191ADE4D009A35E2 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				4013E309191AF397009A35E2 /* Logo.png */,
 				4013E2F1191ADEE6009A35E2 /* Icon.png */,
 				4013E2F2191ADEE6009A35E2 /* Icon@2x.png */,
 			);
@@ -237,9 +240,9 @@
 		4013E2F5191AE019009A35E2 /* SignupLogin */ = {
 			isa = PBXGroup;
 			children = (
-				4013E2F6191AE054009A35E2 /* DefaultSettingsViewController.h */,
-				4013E2F7191AE054009A35E2 /* DefaultSettingsViewController.m */,
-				4013E2F8191AE054009A35E2 /* DefaultSettingsViewController.xib */,
+				4013E2F6191AE054009A35E2 /* SignupLoginViewController.h */,
+				4013E2F7191AE054009A35E2 /* SignupLoginViewController.m */,
+				4013E2F8191AE054009A35E2 /* SignupLoginViewController.xib */,
 			);
 			name = SignupLogin;
 			sourceTree = "<group>";
@@ -322,9 +325,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4013E2F3191ADEE6009A35E2 /* Icon.png in Resources */,
+				4013E30A191AF397009A35E2 /* Logo.png in Resources */,
 				4013E2C2191AD02D009A35E2 /* Images.xcassets in Resources */,
 				4013E2B1191AD02D009A35E2 /* InfoPlist.strings in Resources */,
-				4013E2FA191AE054009A35E2 /* DefaultSettingsViewController.xib in Resources */,
+				4013E2FA191AE054009A35E2 /* SignupLoginViewController.xib in Resources */,
 				4013E2BA191AD02D009A35E2 /* Main.storyboard in Resources */,
 				4013E2F4191ADEE6009A35E2 /* Icon@2x.png in Resources */,
 			);
@@ -348,7 +352,7 @@
 				4013E2B3191AD02D009A35E2 /* main.m in Sources */,
 				4013E2C0191AD02D009A35E2 /* SHOSecondViewController.m in Sources */,
 				4013E2BD191AD02D009A35E2 /* SHOFirstViewController.m in Sources */,
-				4013E2F9191AE054009A35E2 /* DefaultSettingsViewController.m in Sources */,
+				4013E2F9191AE054009A35E2 /* SignupLoginViewController.m in Sources */,
 				4013E2B7191AD02D009A35E2 /* SHOAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

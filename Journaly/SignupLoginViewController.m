@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Parse. All rights reserved.
 //
 
-#import "DefaultSettingsViewController.h"
+#import "SignupLoginViewController.h"
 
-@implementation DefaultSettingsViewController
+@implementation SignupLoginViewController
 
 
 #pragma mark - UIViewController
@@ -29,6 +29,7 @@
         // Create the log in view controller
         PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
         [logInViewController setDelegate:self]; // Set ourselves as the delegate
+        [logInViewController.logInView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Logo.png"]]];
         
         // Create the sign up view controller
         PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
