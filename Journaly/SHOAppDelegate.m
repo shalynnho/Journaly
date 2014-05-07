@@ -7,11 +7,17 @@
 //
 
 #import "SHOAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation SHOAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Parse setApplicationId:@"jJf3zj6CLQoCYw3gkScB9NPGUDHxvyzigqXYhkEd"
+                  clientKey:@"kvvwsm9pz17rCQIkD6YO6bjm7igrkOo1mJ8ESg4V"];
+    
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     // Override point for customization after application launch.
     return YES;
 }
