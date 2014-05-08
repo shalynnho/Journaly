@@ -13,17 +13,10 @@
 
 @interface SHOCameraViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, MBProgressHUDDelegate> {
     
-    
-    NSMutableArray *allImages;
     MBProgressHUD *HUD;
-    MBProgressHUD *refreshHUD;
-    
 }
 
-- (IBAction)refresh:(id)sender;
 - (void)uploadImage:(NSData *)imageData;
-- (void)setUpImages:(NSArray *)images;
 - (IBAction)logOutButtonTapAction:(id)sender;
-- (void)buttonTouched:(id)sender;
 
 @end

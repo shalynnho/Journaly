@@ -33,8 +33,6 @@
 		4013E2EF191AD171009A35E2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4013E2EE191AD171009A35E2 /* SystemConfiguration.framework */; };
 		4013E2F3191ADEE6009A35E2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4013E2F1191ADEE6009A35E2 /* Icon.png */; };
 		4013E2F4191ADEE6009A35E2 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4013E2F2191ADEE6009A35E2 /* Icon@2x.png */; };
-		4013E2F9191AE054009A35E2 /* SignupLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013E2F7191AE054009A35E2 /* SignupLoginViewController.m */; };
-		4013E2FA191AE054009A35E2 /* SignupLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4013E2F8191AE054009A35E2 /* SignupLoginViewController.xib */; };
 		4013E2FC191AE1AB009A35E2 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4013E2FB191AE1AB009A35E2 /* Twitter.framework */; };
 		4013E2FE191AE1E1009A35E2 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4013E2FD191AE1E1009A35E2 /* Accounts.framework */; };
 		4013E300191AE23C009A35E2 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4013E2FF191AE23C009A35E2 /* AdSupport.framework */; };
@@ -267,6 +265,8 @@
 		4013E4CF191B1BA3009A35E2 /* YouTube@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4013E460191B1BA2009A35E2 /* YouTube@2x.png */; };
 		4013E4D1191B1C91009A35E2 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 4013E4D0191B1C91009A35E2 /* camera.png */; };
 		4013E4D4191B38B7009A35E2 /* SHOEntryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013E4D3191B38B7009A35E2 /* SHOEntryTableViewController.m */; };
+		4013E4D7191B4022009A35E2 /* PhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013E4D6191B4022009A35E2 /* PhotoDetailViewController.m */; };
+		4013E4D9191B404D009A35E2 /* PhotoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4013E4D8191B404D009A35E2 /* PhotoDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -312,9 +312,6 @@
 		4013E2EE191AD171009A35E2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4013E2F1191ADEE6009A35E2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		4013E2F2191ADEE6009A35E2 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		4013E2F6191AE054009A35E2 /* SignupLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupLoginViewController.h; sourceTree = "<group>"; };
-		4013E2F7191AE054009A35E2 /* SignupLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupLoginViewController.m; sourceTree = "<group>"; };
-		4013E2F8191AE054009A35E2 /* SignupLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupLoginViewController.xib; sourceTree = "<group>"; };
 		4013E2FB191AE1AB009A35E2 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		4013E2FD191AE1E1009A35E2 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		4013E2FF191AE23C009A35E2 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -550,6 +547,9 @@
 		4013E4D0191B1C91009A35E2 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		4013E4D2191B38B7009A35E2 /* SHOEntryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHOEntryTableViewController.h; sourceTree = "<group>"; };
 		4013E4D3191B38B7009A35E2 /* SHOEntryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHOEntryTableViewController.m; sourceTree = "<group>"; };
+		4013E4D5191B4022009A35E2 /* PhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailViewController.h; sourceTree = "<group>"; };
+		4013E4D6191B4022009A35E2 /* PhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailViewController.m; sourceTree = "<group>"; };
+		4013E4D8191B404D009A35E2 /* PhotoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -638,7 +638,6 @@
 		4013E2AC191AD02D009A35E2 /* Journaly */ = {
 			isa = PBXGroup;
 			children = (
-				4013E2F5191AE019009A35E2 /* SignupLogin */,
 				4013E2B5191AD02D009A35E2 /* SHOAppDelegate.h */,
 				4013E2B6191AD02D009A35E2 /* SHOAppDelegate.m */,
 				4013E2B8191AD02D009A35E2 /* Main.storyboard */,
@@ -646,6 +645,9 @@
 				4013E4D3191B38B7009A35E2 /* SHOEntryTableViewController.m */,
 				4013E2BB191AD02D009A35E2 /* SHOEntryViewController.h */,
 				4013E2BC191AD02D009A35E2 /* SHOEntryViewController.m */,
+				4013E4D5191B4022009A35E2 /* PhotoDetailViewController.h */,
+				4013E4D6191B4022009A35E2 /* PhotoDetailViewController.m */,
+				4013E4D8191B404D009A35E2 /* PhotoDetailViewController.xib */,
 				4013E2BE191AD02D009A35E2 /* SHOCameraViewController.h */,
 				4013E2BF191AD02D009A35E2 /* SHOCameraViewController.m */,
 				4013E30B191B025A009A35E2 /* SHOComposeViewController.h */,
@@ -698,16 +700,6 @@
 			);
 			name = Assets;
 			path = Journaly;
-			sourceTree = "<group>";
-		};
-		4013E2F5191AE019009A35E2 /* SignupLogin */ = {
-			isa = PBXGroup;
-			children = (
-				4013E2F6191AE054009A35E2 /* SignupLoginViewController.h */,
-				4013E2F7191AE054009A35E2 /* SignupLoginViewController.m */,
-				4013E2F8191AE054009A35E2 /* SignupLoginViewController.xib */,
-			);
-			name = SignupLogin;
 			sourceTree = "<group>";
 		};
 		4013E311191B17C8009A35E2 /* MBProgressHUD */ = {
@@ -1146,6 +1138,7 @@
 				4013E382191B1B99009A35E2 /* Add.png in Resources */,
 				4013E49D191B1BA2009A35E2 /* Near_Me@2x.png in Resources */,
 				4013E3D7191B1B99009A35E2 /* Ruler.png in Resources */,
+				4013E4D9191B404D009A35E2 /* PhotoDetailViewController.xib in Resources */,
 				4013E4B8191B1BA2009A35E2 /* Shuffle@2x.png in Resources */,
 				4013E486191B1BA2009A35E2 /* Games_iOS@2x.png in Resources */,
 				4013E4A9191B1BA2009A35E2 /* Pinterest@2x.png in Resources */,
@@ -1229,7 +1222,6 @@
 				4013E3D9191B1B99009A35E2 /* Shuffle.png in Resources */,
 				4013E49F191B1BA2009A35E2 /* New@2x.png in Resources */,
 				4013E4C5191B1BA2009A35E2 /* Tumblr@2x.png in Resources */,
-				4013E2FA191AE054009A35E2 /* SignupLoginViewController.xib in Resources */,
 				4013E3A4191B1B99009A35E2 /* Forrst.png in Resources */,
 				4013E3C4191B1B99009A35E2 /* Orange_Half.png in Resources */,
 				4013E4A4191B1BA2009A35E2 /* Origami@2x.png in Resources */,
@@ -1284,7 +1276,7 @@
 				4013E2C0191AD02D009A35E2 /* SHOCameraViewController.m in Sources */,
 				4013E2BD191AD02D009A35E2 /* SHOEntryViewController.m in Sources */,
 				4013E4D4191B38B7009A35E2 /* SHOEntryTableViewController.m in Sources */,
-				4013E2F9191AE054009A35E2 /* SignupLoginViewController.m in Sources */,
+				4013E4D7191B4022009A35E2 /* PhotoDetailViewController.m in Sources */,
 				4013E2B7191AD02D009A35E2 /* SHOAppDelegate.m in Sources */,
 				4013E30D191B025A009A35E2 /* SHOComposeViewController.m in Sources */,
 				4013E310191B17C2009A35E2 /* MBProgressHUD.m in Sources */,

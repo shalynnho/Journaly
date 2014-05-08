@@ -8,13 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-#import "SignupLoginViewController.h"
+#import "PhotoDetailViewController.h"
+#import "MBProgressHUD.h"
 
-@interface SHOEntryViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
-
-//@property (strong, nonatomic) PFSignUpViewController* signUpViewController;
-//@property (strong, nonatomic) PFLogInViewController* loginViewController;
+@interface SHOEntryViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, MBProgressHUDDelegate> {
+    
+    MBProgressHUD *refreshHUD;
+    NSMutableArray *allImages;
+    NSInteger segIndex;
+    
+}
 
 - (IBAction)logOutButtonTapAction:(id)sender;
+- (IBAction)refreshPhotos:(id)sender;
+- (void)setUpImages:(NSArray *)images;
+- (void)buttonTouched:(id)sender;
 
 @end
