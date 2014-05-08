@@ -60,7 +60,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="QO3-Gf-CJR"/>
+                    <navigationItem key="navigationItem" title="Entries" id="QO3-Gf-CJR">
+                        <barButtonItem key="leftBarButtonItem" image="Reset.png" id="A6G-MF-o3D">
+                            <connections>
+                                <action selector="refresh:" destination="CZ4-MO-1fc" id="W7h-Lp-Ho9"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="line_power.png" id="ArB-pp-Ve7">
+                            <connections>
+                                <action selector="logOutButtonTapAction:" destination="CZ4-MO-1fc" id="geP-mw-bnH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="entryContainerView" destination="Xv2-V2-9X2" id="fye-oK-WZz"/>
                         <outlet property="photoScrollView" destination="ibM-Mj-VEk" id="DYE-Sx-SAb"/>
@@ -100,8 +111,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="   Upload Photo" image="line__0000s_0099_upload.png">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="uploadPhotoTapped:" destination="QUy-BD-bpt" eventType="touchUpInside" id="Szo-SD-vPJ"/>
@@ -112,8 +123,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="   Take Photo" image="line__0000s_0122_camera.png">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="takePhotoTapped:" destination="QUy-BD-bpt" eventType="touchUpInside" id="tHe-ne-8cc"/>
@@ -150,15 +161,10 @@
                                                 <action selector="backButtonTapped:" destination="6dp-7y-842" id="FV1-4m-Ctb"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" image="New.png" id="7B2-9s-7PX">
-                                            <connections>
-                                                <action selector="editButtonTapped:" destination="6dp-7y-842" id="gV5-Ec-fnG"/>
-                                            </connections>
-                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" text="sdfsdfaa" translatesAutoresizingMaskIntoConstraints="NO" id="yQp-3j-Mmc">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" editable="NO" text="text here" translatesAutoresizingMaskIntoConstraints="NO" id="yQp-3j-Mmc">
                                 <rect key="frame" x="20" y="88" width="280" height="317"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -343,6 +349,7 @@
         <image name="line_power.png" width="24" height="25"/>
         <image name="line_save.png" width="25" height="25"/>
     </resources>
+    <color key="tintColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

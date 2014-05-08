@@ -49,6 +49,8 @@
 
 
 - (IBAction)editButtonTapped:(id)sender {
+    
+    //[_detailText setEditable:YES];
 }
 
 - (void)didReceiveMemoryWarning
