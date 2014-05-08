@@ -126,6 +126,16 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    NSString * segueName = segue.identifier;
+    if ([segueName isEqualToString: @"entryDetailSegue"]) {
+        _entryDetailController = (SHOEntryDetailViewController*) [segue destinationViewController];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    _entryDetailController.detailItem = [_postArray objectAtIndex:indexPath.row];
+    NSLog(@"didSelectRowAtIndexPath CALLED!");
 }
 
 

@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SHOEntryDetailViewController.h"
 
-@interface SHOEntryTableViewController : UITableViewController
+@interface SHOEntryTableViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
+
+@property (strong, nonatomic) SHOEntryDetailViewController* entryDetailController;
 @property (nonatomic, strong) NSMutableArray *postArray;
 
 @end

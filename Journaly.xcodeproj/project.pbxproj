@@ -307,6 +307,7 @@
 		4013E52A191B61F5009A35E2 /* line_power.png in Resources */ = {isa = PBXBuildFile; fileRef = 4013E529191B61F5009A35E2 /* line_power.png */; };
 		4013E52D191B62C9009A35E2 /* line_save.png in Resources */ = {isa = PBXBuildFile; fileRef = 4013E52B191B62C9009A35E2 /* line_save.png */; };
 		4013E52E191B62C9009A35E2 /* line_save@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4013E52C191B62C9009A35E2 /* line_save@2x.png */; };
+		4013E531191B989D009A35E2 /* SHOEntryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013E530191B989D009A35E2 /* SHOEntryDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -630,6 +631,8 @@
 		4013E529191B61F5009A35E2 /* line_power.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_power.png; sourceTree = "<group>"; };
 		4013E52B191B62C9009A35E2 /* line_save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line_save.png; sourceTree = "<group>"; };
 		4013E52C191B62C9009A35E2 /* line_save@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line_save@2x.png"; sourceTree = "<group>"; };
+		4013E52F191B989D009A35E2 /* SHOEntryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHOEntryDetailViewController.h; sourceTree = "<group>"; };
+		4013E530191B989D009A35E2 /* SHOEntryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHOEntryDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -721,6 +724,8 @@
 				4013E2B8191AD02D009A35E2 /* Main.storyboard */,
 				4013E2B5191AD02D009A35E2 /* SHOAppDelegate.h */,
 				4013E2B6191AD02D009A35E2 /* SHOAppDelegate.m */,
+				4013E52F191B989D009A35E2 /* SHOEntryDetailViewController.h */,
+				4013E530191B989D009A35E2 /* SHOEntryDetailViewController.m */,
 				4013E4D2191B38B7009A35E2 /* SHOEntryTableViewController.h */,
 				4013E4D3191B38B7009A35E2 /* SHOEntryTableViewController.m */,
 				4013E2BB191AD02D009A35E2 /* SHOEntryViewController.h */,
@@ -1441,6 +1446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4013E2B3191AD02D009A35E2 /* main.m in Sources */,
+				4013E531191B989D009A35E2 /* SHOEntryDetailViewController.m in Sources */,
 				4013E2C0191AD02D009A35E2 /* SHOCameraViewController.m in Sources */,
 				4013E2BD191AD02D009A35E2 /* SHOEntryViewController.m in Sources */,
 				4013E4D4191B38B7009A35E2 /* SHOEntryTableViewController.m in Sources */,
