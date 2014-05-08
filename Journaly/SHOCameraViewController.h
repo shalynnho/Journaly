@@ -9,8 +9,16 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 #import "SHOEntryViewController.h"
+#import "MBProgressHUD.h"
 
-@interface SHOCameraViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
+@interface SHOCameraViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, MBProgressHUDDelegate> {
+    
+    
+
+    MBProgressHUD *HUD;
+    MBProgressHUD *refreshHUD;
+    
+}
 
 - (IBAction)logOutButtonTapAction:(id)sender;
 

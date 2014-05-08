@@ -20,6 +20,40 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)uploadPhotoTapped:(id)sender {
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    
+    // Set source to Photo Library
+    imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    // Delegate is self
+    imagePicker.delegate = self;
+    
+    // Show image picker
+    [self presentViewController:imagePicker animated:YES completion:nil];
+}
+
+- (IBAction)takePhotoTapped:(id)sender {
+    // Create image picker controller
+    UIImagePickerController* imagePicker = [[UIImagePickerController alloc] init];
+    
+    // Check for camera
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] == YES) {
+        // Set source to the camera
+        imagePicker.sourceType =  UIImagePickerControllerSourceTypeCamera;
+    } else {
+        // Set source to Photo Library
+        imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
+    
+    // Delegate is self
+    imagePicker.delegate = self;
+    
+    // Show image picker
+    [self presentViewController:imagePicker animated:YES completion:nil];
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -41,6 +75,34 @@
     
     // Present the log in view controller
     [self presentViewController:loginViewController animated:YES completion:NULL];
+}
+
+#pragma mark - UIImagePickerControllerDelegate
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    // Access the uncropped image from info dictionary
+    UIImage *image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+    
+    // Dismiss controller
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    
+    // Resize image
+    UIGraphicsBeginImageContext(CGSizeMake(640, 960));
+    [image drawInRect: CGRectMake(0, 0, 640, 960)];
+    UIImage *smallImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    // Upload image
+    NSData *imageData = UIImageJPEGRepresentation(smallImage, 0.05f);
+    //[self uploadImage:imageData];
+}
+
+#pragma mark - MBProgressHUDDelegate
+
+- (void)hudWasHidden:(MBProgressHUD *)hud {
+    // Remove HUD from screen when the HUD hides
+    [HUD removeFromSuperview];
+    HUD = nil;
 }
 
 #pragma mark - PFLogInViewControllerDelegate
