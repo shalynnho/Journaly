@@ -60,7 +60,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Entries" image="Files.png" id="u1e-5L-l1D"/>
+                    <navigationItem key="navigationItem" id="QO3-Gf-CJR"/>
                     <connections>
                         <outlet property="entryContainerView" destination="Xv2-V2-9X2" id="fye-oK-WZz"/>
                         <outlet property="photoScrollView" destination="ibM-Mj-VEk" id="DYE-Sx-SAb"/>
@@ -68,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="653" y="-210"/>
+            <point key="canvasLocation" x="1179" y="-210"/>
         </scene>
         <!--Camera View Controller - Second-->
         <scene sceneID="ot8-2e-RuS">
@@ -169,12 +169,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="detailText" destination="yQp-3j-Mmc" id="Fsf-bQ-xIg"/>
                         <outlet property="detailTitle" destination="V5f-e8-K1h" id="trv-wX-THF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rmo-rd-Wou" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1101" y="207"/>
+            <point key="canvasLocation" x="1627" y="207"/>
         </scene>
         <!--Compose View Controller - Compose-->
         <scene sceneID="jcu-u9-qwx">
@@ -255,7 +256,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="BeF-42-TAK"/>
+                        <segue destination="j3Q-tg-wNE" kind="relationship" relationship="viewControllers" id="BeF-42-TAK"/>
                         <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
                         <segue destination="82h-nP-uwY" kind="relationship" relationship="viewControllers" id="aiN-o1-kxI"/>
                     </connections>
@@ -309,7 +310,26 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CcJ-hj-5vG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1111" y="-210"/>
+            <point key="canvasLocation" x="1637" y="-210"/>
+        </scene>
+        <!--Navigation Controller - Entries-->
+        <scene sceneID="7Mq-dN-rma">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j3Q-tg-wNE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Entries" image="Files.png" id="u1e-5L-l1D"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Ms-Kt-W7Q">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="rootViewController" id="fui-NX-xH2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PRS-IL-EFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="-210"/>
         </scene>
     </scenes>
     <resources>

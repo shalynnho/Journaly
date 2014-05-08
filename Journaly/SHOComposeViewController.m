@@ -2,7 +2,7 @@
 //  SHOThirdViewController.m
 //  Journaly
 //
-//  Created by Derp Derp on 5/7/14.
+//  created by Shalynn Ho <shalynkh@usc.edu> on 5/7/14.
 //  Copyright (c) 2014 SHO. All rights reserved.
 //
 

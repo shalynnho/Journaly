@@ -2,7 +2,7 @@
 //  SHOEntryTableViewController.m
 //  Journaly
 //
-//  Created by Derp Derp on 5/7/14.
+//  created by Shalynn Ho <shalynkh@usc.edu> on 5/7/14.
 //  Copyright (c) 2014 SHO. All rights reserved.
 //
 
@@ -134,8 +134,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    _entryDetailController.detailItem = [_postArray objectAtIndex:indexPath.row];
-    NSLog(@"didSelectRowAtIndexPath CALLED!");
+    PFObject* obj = [_postArray objectAtIndex:indexPath.row];
+    _entryDetailController.detailItem = obj;
+    NSString* objectID = obj.objectId;
+    NSString* title = (NSString*) [obj objectForKey:@"title"];
+    NSString* text = (NSString*) [obj objectForKey:@"text"];
+    NSLog(@"~~~ ID: %@, title: %@, text:%@", objectID, title,text);
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:objectID forKey:@"objectID"];
+    [self performSegueWithIdentifier:@"entryDetailSegue" sender:self];
 }
 
 

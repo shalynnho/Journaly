@@ -2,7 +2,7 @@
 //  SHOEntryDetailViewController.m
 //  Journaly
 //
-//  Created by Derp Derp on 5/8/14.
+//  created by Shalynn Ho <shalynkh@usc.edu> on 5/8/14.
 //  Copyright (c) 2014 SHO. All rights reserved.
 //
 
@@ -18,13 +18,20 @@
 
 @implementation SHOEntryDetailViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
+- (void)viewWillAppear:(BOOL)animated {
+        [super viewWillAppear:animated];
         // Custom initialization
-    }
-    return self;
+        
+        NSUserDefaults *fetchDefaults = [NSUserDefaults standardUserDefaults];
+        NSString *objectID = [fetchDefaults objectForKey:@"objectID"];
+        PFObject* obj = [PFQuery getObjectOfClass:@"JournalEntry" objectId:objectID];
+        _detailItem = obj;
+        
+        NSString* title = (NSString*) [obj objectForKey:@"title"];
+        NSString* text = (NSString*) [obj objectForKey:@"text"];
+        NSLog(@"ID: %@, title: %@, text:%@", objectID, title,text);
+        _detailTitle.title = title;
+        _detailText.text = text;
 }
 
 - (void)viewDidLoad
@@ -32,9 +39,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    PFObject* object = (PFObject*) _detailItem;
-    _detailTitle.title = [[object objectForKey:@"title"] stringByAppendingString:@""];
-    _detailText.text = [[object objectForKey:@"text"] stringByAppendingString:@""];
+    
 }
 
 - (IBAction)editButtonTapped:(id)sender {
