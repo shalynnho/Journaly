@@ -41,6 +41,7 @@
 		4013E302191AE24B009A35E2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4013E301191AE24B009A35E2 /* CoreLocation.framework */; };
 		4013E304191AE25E009A35E2 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4013E303191AE25E009A35E2 /* Social.framework */; };
 		4013E30A191AF397009A35E2 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4013E309191AF397009A35E2 /* Logo.png */; };
+		4013E30D191B025A009A35E2 /* SHOThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013E30C191B025A009A35E2 /* SHOThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,8 @@
 		4013E301191AE24B009A35E2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4013E303191AE25E009A35E2 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		4013E309191AF397009A35E2 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		4013E30B191B025A009A35E2 /* SHOThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHOThirdViewController.h; sourceTree = "<group>"; };
+		4013E30C191B025A009A35E2 /* SHOThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHOThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +190,8 @@
 				4013E2B5191AD02D009A35E2 /* SHOAppDelegate.h */,
 				4013E2B6191AD02D009A35E2 /* SHOAppDelegate.m */,
 				4013E2B8191AD02D009A35E2 /* Main.storyboard */,
+				4013E30B191B025A009A35E2 /* SHOThirdViewController.h */,
+				4013E30C191B025A009A35E2 /* SHOThirdViewController.m */,
 				4013E2BB191AD02D009A35E2 /* SHOFirstViewController.h */,
 				4013E2BC191AD02D009A35E2 /* SHOFirstViewController.m */,
 				4013E2BE191AD02D009A35E2 /* SHOSecondViewController.h */,
@@ -354,6 +359,7 @@
 				4013E2BD191AD02D009A35E2 /* SHOFirstViewController.m in Sources */,
 				4013E2F9191AE054009A35E2 /* SignupLoginViewController.m in Sources */,
 				4013E2B7191AD02D009A35E2 /* SHOAppDelegate.m in Sources */,
+				4013E30D191B025A009A35E2 /* SHOThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
