@@ -60,7 +60,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Entries" image="first" id="u1e-5L-l1D"/>
+                    <tabBarItem key="tabBarItem" title="Entries" image="Files.png" id="u1e-5L-l1D"/>
                     <connections>
                         <outlet property="entryContainerView" destination="Xv2-V2-9X2" id="fye-oK-WZz"/>
                         <outlet property="photoScrollView" destination="ibM-Mj-VEk" id="DYE-Sx-SAb"/>
@@ -122,7 +122,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Camera" image="second" id="Z7h-1E-pvt"/>
+                    <tabBarItem key="tabBarItem" title="Camera" image="camera.png" id="Z7h-1E-pvt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,7 +174,7 @@
                             <constraint firstItem="L2e-Me-fYN" firstAttribute="top" secondItem="7xQ-22-IuA" secondAttribute="bottom" constant="40" id="3tv-gF-B7y"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Compose" id="Bz6-ut-rvm"/>
+                    <tabBarItem key="tabBarItem" title="Compose" image="New.png" id="Bz6-ut-rvm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="geu-FS-WPP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -230,11 +230,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Files.png" width="22" height="27"/>
+        <image name="New.png" width="23" height="23"/>
         <image name="Reset.png" width="28" height="24"/>
         <image name="Upload.png" width="19" height="27"/>
         <image name="camera.png" width="30" height="30"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
