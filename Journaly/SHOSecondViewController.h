@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import "SHOFirstViewController.h"
 
-@interface SHOSecondViewController : UIViewController
+@interface SHOSecondViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
+
+- (IBAction)logOutButtonTapAction:(id)sender;
 
 @end

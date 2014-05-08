@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SHOFirstViewController.h"
 
-@interface SHOThirdViewController : UIViewController
+@interface SHOThirdViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
+
+
+- (IBAction)logOutButtonTapAction:(id)sender;
+
 
 @end

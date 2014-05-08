@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
+#import "SignupLoginViewController.h"
 
 @interface SHOFirstViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
+
+//@property (strong, nonatomic) PFSignUpViewController* signUpViewController;
+//@property (strong, nonatomic) PFLogInViewController* loginViewController;
 
 - (IBAction)logOutButtonTapAction:(id)sender;
 

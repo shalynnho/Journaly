@@ -17,7 +17,7 @@
 #pragma mark - UIViewController
 
 - (void)viewWillAppear:(BOOL)animated {
-    NSLog(@"ViewWillAppear");
+    //NSLog(@"ViewWillAppear");
     [super viewWillAppear:animated];
     if ([PFUser currentUser]) {
         //self.welcomeLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Welcome %@!", nil), [[PFUser currentUser] username]];
@@ -31,22 +31,26 @@
     NSLog(@"ViewDidAppear");
     
     if (![PFUser currentUser]) { // No user logged in
-        // Create the log in view controller
-        PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
-        [logInViewController setDelegate:self]; // Set ourselves as the delegate
-        [logInViewController.logInView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Logo.png"]]];
-        
-        // Create the sign up view controller
-        PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
-        [signUpViewController setDelegate:self]; // Set ourselves as the delegate
-        
-        // Assign our sign up controller to be displayed from the login controller
-        [logInViewController setSignUpController:signUpViewController];
-        
-        // Present the log in view controller
-        [self presentViewController:logInViewController animated:YES completion:NULL];
+        [self showLoginPane];
     }
     
+}
+
+- (void)showLoginPane {
+    // Create the log in view controller
+    PFLogInViewController* loginViewController = [[PFLogInViewController alloc] init];
+    [loginViewController setDelegate:self]; // Set ourselves as the delegate
+    [loginViewController.logInView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Logo.png"]]];
+    
+    // Create the sign up view controller
+    PFSignUpViewController* signUpViewController = [[PFSignUpViewController alloc] init];
+    [signUpViewController setDelegate:self]; // Set ourselves as the delegate
+    
+    // Assign our sign up controller to be displayed from the login controller
+    [loginViewController setSignUpController:signUpViewController];
+    
+    // Present the log in view controller
+    [self presentViewController:loginViewController animated:YES completion:NULL];
 }
 
 - (void)viewDidLoad
@@ -54,20 +58,7 @@
     [super viewDidLoad];
     
     if (![PFUser currentUser]) { // No user logged in
-        // Create the log in view controller
-        PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
-        [logInViewController setDelegate:self]; // Set ourselves as the delegate
-        [logInViewController.logInView setLogo:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Logo.png"]]];
-        
-        // Create the sign up view controller
-        PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
-        [signUpViewController setDelegate:self]; // Set ourselves as the delegate
-        
-        // Assign our sign up controller to be displayed from the login controller
-        [logInViewController setSignUpController:signUpViewController];
-        
-        // Present the log in view controller
-        [self presentViewController:logInViewController animated:YES completion:NULL];
+        [self showLoginPane];
     }
     
 	// Do any additional setup after loading the view, typically from a nib.
@@ -171,8 +162,9 @@
 
 - (IBAction)logOutButtonTapAction:(id)sender {
     [PFUser logOut];
-    //    [self.navigationController popViewControllerAnimated:YES];
-    [self.navigationController popToRootViewControllerAnimated:NO];
+    [self showLoginPane];
+    //[self.navigationController popViewControllerAnimated:YES];
+    //[self.navigationController popToRootViewControllerAnimated:NO];
 }
 
 @end
