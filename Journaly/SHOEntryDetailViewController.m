@@ -29,7 +29,7 @@
         
         NSString* title = (NSString*) [obj objectForKey:@"title"];
         NSString* text = (NSString*) [obj objectForKey:@"text"];
-        NSLog(@"ID: %@, title: %@, text:%@", objectID, title,text);
+//        NSLog(@"ID: %@, title: %@, text:%@", objectID, title,text);
         _detailTitle.title = title;
         _detailText.text = text;
 }
@@ -41,6 +41,12 @@
     
     
 }
+
+- (IBAction)backButtonTapped:(id)sender {
+    [self dismissViewControllerAnimated:NO completion:nil];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 
 - (IBAction)editButtonTapped:(id)sender {
 }

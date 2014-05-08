@@ -145,14 +145,14 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="V5f-e8-K1h">
-                                        <barButtonItem key="leftBarButtonItem" image="New.png" id="7B2-9s-7PX">
+                                        <barButtonItem key="leftBarButtonItem" image="Previous.png" id="gjm-Ni-yUo">
                                             <connections>
-                                                <action selector="editButtonTapped:" destination="6dp-7y-842" id="gV5-Ec-fnG"/>
+                                                <action selector="backButtonTapped:" destination="6dp-7y-842" id="FV1-4m-Ctb"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" image="line_power.png" id="xz4-tb-lhd">
+                                        <barButtonItem key="rightBarButtonItem" image="New.png" id="7B2-9s-7PX">
                                             <connections>
-                                                <action selector="logOutButtonTapAction:" destination="CZ4-MO-1fc" id="QVD-ua-DGW"/>
+                                                <action selector="editButtonTapped:" destination="6dp-7y-842" id="gV5-Ec-fnG"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -335,6 +335,7 @@
     <resources>
         <image name="Files.png" width="22" height="27"/>
         <image name="New.png" width="23" height="23"/>
+        <image name="Previous.png" width="11" height="20"/>
         <image name="Reset.png" width="28" height="24"/>
         <image name="camera.png" width="30" height="30"/>
         <image name="line__0000s_0099_upload.png" width="40" height="48"/>
