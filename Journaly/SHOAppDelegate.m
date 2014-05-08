@@ -8,7 +8,7 @@
 
 #import "SHOAppDelegate.h"
 #import "SignupLoginViewController.h"
-#import "SHOFirstViewController.h"
+#import "SHOEntryViewController.h"
 
 @implementation SHOAppDelegate
 

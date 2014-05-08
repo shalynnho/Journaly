@@ -1,39 +1,32 @@
 //
-//  SHOFirstViewController.m
+//  SHOThirdViewController.m
 //  Journaly
 //
 //  Created by Derp Derp on 5/7/14.
 //  Copyright (c) 2014 SHO. All rights reserved.
 //
 
-#import "SHOFirstViewController.h"
+#import "SHOComposeViewController.h"
 
-@interface SHOFirstViewController ()
+@interface SHOComposeViewController ()
 
 @end
 
-@implementation SHOFirstViewController
+@implementation SHOComposeViewController
 
-#pragma mark - UIViewController
-
-- (void)viewWillAppear:(BOOL)animated {
-    //NSLog(@"ViewWillAppear");
-    [super viewWillAppear:animated];
-    if ([PFUser currentUser]) {
-        //self.welcomeLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Welcome %@!", nil), [[PFUser currentUser] username]];
-    } else {
-        //self.welcomeLabel.text = NSLocalizedString(@"Not logged in", nil);
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
     }
+    return self;
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    NSLog(@"ViewDidAppear");
-    
-    if (![PFUser currentUser]) { // No user logged in
-        [self showLoginPane];
-    }
-    
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
 }
 
 - (void)showLoginPane {
@@ -51,34 +44,6 @@
     
     // Present the log in view controller
     [self presentViewController:loginViewController animated:YES completion:NULL];
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    if (![PFUser currentUser]) { // No user logged in
-        [self showLoginPane];
-    }
-    
-	// Do any additional setup after loading the view, typically from a nib.
-    
-//    PFUser *user = [PFUser user];
-//    user.username = @"my name";
-//    user.password = @"my pass";
-//    user.email = @"email@example.com";
-//    
-//    // other fields can be set if you want to save more information
-//    user[@"phone"] = @"650-555-0000";
-//    
-//    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-//        if (!error) {
-//            // Hooray! Let them use the app now.
-//        } else {
-//            NSString *errorString = [error userInfo][@"error"];
-//            // Show the errorString somewhere and let the user try again.
-//        }
-//    }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -158,13 +123,12 @@
 }
 
 
-#pragma mark - ()
 
 - (IBAction)logOutButtonTapAction:(id)sender {
     [PFUser logOut];
     [self showLoginPane];
-    //[self.navigationController popViewControllerAnimated:YES];
-    //[self.navigationController popToRootViewControllerAnimated:NO];
+    //    [self.navigationController popViewControllerAnimated:YES];
+//    [self.navigationController popToRootViewControllerAnimated:NO];
 }
 
 @end

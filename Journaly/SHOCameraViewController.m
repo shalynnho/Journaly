@@ -1,32 +1,29 @@
 //
-//  SHOThirdViewController.m
+//  SHOSecondViewController.m
 //  Journaly
 //
 //  Created by Derp Derp on 5/7/14.
 //  Copyright (c) 2014 SHO. All rights reserved.
 //
 
-#import "SHOThirdViewController.h"
+#import "SHOCameraViewController.h"
 
-@interface SHOThirdViewController ()
+@interface SHOCameraViewController ()
 
 @end
 
-@implementation SHOThirdViewController
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@implementation SHOCameraViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 - (void)showLoginPane {
@@ -44,12 +41,6 @@
     
     // Present the log in view controller
     [self presentViewController:loginViewController animated:YES completion:NULL];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - PFLogInViewControllerDelegate
@@ -121,7 +112,6 @@
 - (void)signUpViewControllerDidCancelSignUp:(PFSignUpViewController *)signUpController {
     NSLog(@"User dismissed the signUpViewController");
 }
-
 
 
 - (IBAction)logOutButtonTapAction:(id)sender {

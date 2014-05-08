@@ -10,7 +10,7 @@
 #import <Parse/Parse.h>
 #import "SignupLoginViewController.h"
 
-@interface SHOFirstViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
+@interface SHOEntryViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
 
 //@property (strong, nonatomic) PFSignUpViewController* signUpViewController;
 //@property (strong, nonatomic) PFLogInViewController* loginViewController;

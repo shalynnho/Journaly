@@ -1,29 +1,39 @@
 //
-//  SHOSecondViewController.m
+//  SHOFirstViewController.m
 //  Journaly
 //
 //  Created by Derp Derp on 5/7/14.
 //  Copyright (c) 2014 SHO. All rights reserved.
 //
 
-#import "SHOSecondViewController.h"
+#import "SHOEntryViewController.h"
 
-@interface SHOSecondViewController ()
+@interface SHOEntryViewController ()
 
 @end
 
-@implementation SHOSecondViewController
+@implementation SHOEntryViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+#pragma mark - UIViewController
+
+- (void)viewWillAppear:(BOOL)animated {
+    //NSLog(@"ViewWillAppear");
+    [super viewWillAppear:animated];
+    if ([PFUser currentUser]) {
+        //self.welcomeLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Welcome %@!", nil), [[PFUser currentUser] username]];
+    } else {
+        //self.welcomeLabel.text = NSLocalizedString(@"Not logged in", nil);
+    }
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    NSLog(@"ViewDidAppear");
+    
+    if (![PFUser currentUser]) { // No user logged in
+        [self showLoginPane];
+    }
+    
 }
 
 - (void)showLoginPane {
@@ -41,6 +51,40 @@
     
     // Present the log in view controller
     [self presentViewController:loginViewController animated:YES completion:NULL];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    if (![PFUser currentUser]) { // No user logged in
+        [self showLoginPane];
+    }
+    
+	// Do any additional setup after loading the view, typically from a nib.
+    
+//    PFUser *user = [PFUser user];
+//    user.username = @"my name";
+//    user.password = @"my pass";
+//    user.email = @"email@example.com";
+//    
+//    // other fields can be set if you want to save more information
+//    user[@"phone"] = @"650-555-0000";
+//    
+//    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//        if (!error) {
+//            // Hooray! Let them use the app now.
+//        } else {
+//            NSString *errorString = [error userInfo][@"error"];
+//            // Show the errorString somewhere and let the user try again.
+//        }
+//    }];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - PFLogInViewControllerDelegate
@@ -114,11 +158,13 @@
 }
 
 
+#pragma mark - ()
+
 - (IBAction)logOutButtonTapAction:(id)sender {
     [PFUser logOut];
     [self showLoginPane];
-    //    [self.navigationController popViewControllerAnimated:YES];
-//    [self.navigationController popToRootViewControllerAnimated:NO];
+    //[self.navigationController popViewControllerAnimated:YES];
+    //[self.navigationController popToRootViewControllerAnimated:NO];
 }
 
 @end

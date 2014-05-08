@@ -14,8 +14,8 @@
 		4013E2B3191AD02D009A35E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013E2B2191AD02D009A35E2 /* main.m */; };
 		4013E2B7191AD02D009A35E2 /* SHOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013E2B6191AD02D009A35E2 /* SHOAppDelegate.m */; };
 		4013E2BA191AD02D009A35E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4013E2B8191AD02D009A35E2 /* Main.storyboard */; };
-		4013E2BD191AD02D009A35E2 /* SHOFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013E2BC191AD02D009A35E2 /* SHOFirstViewController.m */; };
-		4013E2C0191AD02D009A35E2 /* SHOSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013E2BF191AD02D009A35E2 /* SHOSecondViewController.m */; };
+		4013E2BD191AD02D009A35E2 /* SHOEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013E2BC191AD02D009A35E2 /* SHOEntryViewController.m */; };
+		4013E2C0191AD02D009A35E2 /* SHOCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013E2BF191AD02D009A35E2 /* SHOCameraViewController.m */; };
 		4013E2C2191AD02D009A35E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4013E2C1191AD02D009A35E2 /* Images.xcassets */; };
 		4013E2C9191AD02D009A35E2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4013E2C8191AD02D009A35E2 /* XCTest.framework */; };
 		4013E2CA191AD02D009A35E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4013E2A6191AD02D009A35E2 /* Foundation.framework */; };
@@ -41,7 +41,7 @@
 		4013E302191AE24B009A35E2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4013E301191AE24B009A35E2 /* CoreLocation.framework */; };
 		4013E304191AE25E009A35E2 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4013E303191AE25E009A35E2 /* Social.framework */; };
 		4013E30A191AF397009A35E2 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4013E309191AF397009A35E2 /* Logo.png */; };
-		4013E30D191B025A009A35E2 /* SHOThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013E30C191B025A009A35E2 /* SHOThirdViewController.m */; };
+		4013E30D191B025A009A35E2 /* SHOComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013E30C191B025A009A35E2 /* SHOComposeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,10 +66,10 @@
 		4013E2B5191AD02D009A35E2 /* SHOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHOAppDelegate.h; sourceTree = "<group>"; };
 		4013E2B6191AD02D009A35E2 /* SHOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHOAppDelegate.m; sourceTree = "<group>"; };
 		4013E2B9191AD02D009A35E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4013E2BB191AD02D009A35E2 /* SHOFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHOFirstViewController.h; sourceTree = "<group>"; };
-		4013E2BC191AD02D009A35E2 /* SHOFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHOFirstViewController.m; sourceTree = "<group>"; };
-		4013E2BE191AD02D009A35E2 /* SHOSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHOSecondViewController.h; sourceTree = "<group>"; };
-		4013E2BF191AD02D009A35E2 /* SHOSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHOSecondViewController.m; sourceTree = "<group>"; };
+		4013E2BB191AD02D009A35E2 /* SHOEntryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHOEntryViewController.h; sourceTree = "<group>"; };
+		4013E2BC191AD02D009A35E2 /* SHOEntryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHOEntryViewController.m; sourceTree = "<group>"; };
+		4013E2BE191AD02D009A35E2 /* SHOCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHOCameraViewController.h; sourceTree = "<group>"; };
+		4013E2BF191AD02D009A35E2 /* SHOCameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHOCameraViewController.m; sourceTree = "<group>"; };
 		4013E2C1191AD02D009A35E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4013E2C7191AD02D009A35E2 /* JournalyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JournalyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4013E2C8191AD02D009A35E2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -96,8 +96,8 @@
 		4013E301191AE24B009A35E2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4013E303191AE25E009A35E2 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		4013E309191AF397009A35E2 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
-		4013E30B191B025A009A35E2 /* SHOThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHOThirdViewController.h; sourceTree = "<group>"; };
-		4013E30C191B025A009A35E2 /* SHOThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHOThirdViewController.m; sourceTree = "<group>"; };
+		4013E30B191B025A009A35E2 /* SHOComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHOComposeViewController.h; sourceTree = "<group>"; };
+		4013E30C191B025A009A35E2 /* SHOComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHOComposeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,12 +190,12 @@
 				4013E2B5191AD02D009A35E2 /* SHOAppDelegate.h */,
 				4013E2B6191AD02D009A35E2 /* SHOAppDelegate.m */,
 				4013E2B8191AD02D009A35E2 /* Main.storyboard */,
-				4013E30B191B025A009A35E2 /* SHOThirdViewController.h */,
-				4013E30C191B025A009A35E2 /* SHOThirdViewController.m */,
-				4013E2BB191AD02D009A35E2 /* SHOFirstViewController.h */,
-				4013E2BC191AD02D009A35E2 /* SHOFirstViewController.m */,
-				4013E2BE191AD02D009A35E2 /* SHOSecondViewController.h */,
-				4013E2BF191AD02D009A35E2 /* SHOSecondViewController.m */,
+				4013E2BB191AD02D009A35E2 /* SHOEntryViewController.h */,
+				4013E2BC191AD02D009A35E2 /* SHOEntryViewController.m */,
+				4013E2BE191AD02D009A35E2 /* SHOCameraViewController.h */,
+				4013E2BF191AD02D009A35E2 /* SHOCameraViewController.m */,
+				4013E30B191B025A009A35E2 /* SHOComposeViewController.h */,
+				4013E30C191B025A009A35E2 /* SHOComposeViewController.m */,
 				4013E2C1191AD02D009A35E2 /* Images.xcassets */,
 				4013E2AD191AD02D009A35E2 /* Supporting Files */,
 			);
@@ -355,11 +355,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4013E2B3191AD02D009A35E2 /* main.m in Sources */,
-				4013E2C0191AD02D009A35E2 /* SHOSecondViewController.m in Sources */,
-				4013E2BD191AD02D009A35E2 /* SHOFirstViewController.m in Sources */,
+				4013E2C0191AD02D009A35E2 /* SHOCameraViewController.m in Sources */,
+				4013E2BD191AD02D009A35E2 /* SHOEntryViewController.m in Sources */,
 				4013E2F9191AE054009A35E2 /* SignupLoginViewController.m in Sources */,
 				4013E2B7191AD02D009A35E2 /* SHOAppDelegate.m in Sources */,
-				4013E30D191B025A009A35E2 /* SHOThirdViewController.m in Sources */,
+				4013E30D191B025A009A35E2 /* SHOComposeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
