@@ -266,6 +266,7 @@
 		4013E4CE191B1BA3009A35E2 /* World_Times@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4013E45F191B1BA2009A35E2 /* World_Times@2x.png */; };
 		4013E4CF191B1BA3009A35E2 /* YouTube@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4013E460191B1BA2009A35E2 /* YouTube@2x.png */; };
 		4013E4D1191B1C91009A35E2 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 4013E4D0191B1C91009A35E2 /* camera.png */; };
+		4013E4D4191B38B7009A35E2 /* SHOEntryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4013E4D3191B38B7009A35E2 /* SHOEntryTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -547,6 +548,8 @@
 		4013E45F191B1BA2009A35E2 /* World_Times@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "World_Times@2x.png"; sourceTree = "<group>"; };
 		4013E460191B1BA2009A35E2 /* YouTube@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "YouTube@2x.png"; sourceTree = "<group>"; };
 		4013E4D0191B1C91009A35E2 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		4013E4D2191B38B7009A35E2 /* SHOEntryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHOEntryTableViewController.h; sourceTree = "<group>"; };
+		4013E4D3191B38B7009A35E2 /* SHOEntryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHOEntryTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -639,6 +642,8 @@
 				4013E2B5191AD02D009A35E2 /* SHOAppDelegate.h */,
 				4013E2B6191AD02D009A35E2 /* SHOAppDelegate.m */,
 				4013E2B8191AD02D009A35E2 /* Main.storyboard */,
+				4013E4D2191B38B7009A35E2 /* SHOEntryTableViewController.h */,
+				4013E4D3191B38B7009A35E2 /* SHOEntryTableViewController.m */,
 				4013E2BB191AD02D009A35E2 /* SHOEntryViewController.h */,
 				4013E2BC191AD02D009A35E2 /* SHOEntryViewController.m */,
 				4013E2BE191AD02D009A35E2 /* SHOCameraViewController.h */,
@@ -1278,6 +1283,7 @@
 				4013E2B3191AD02D009A35E2 /* main.m in Sources */,
 				4013E2C0191AD02D009A35E2 /* SHOCameraViewController.m in Sources */,
 				4013E2BD191AD02D009A35E2 /* SHOEntryViewController.m in Sources */,
+				4013E4D4191B38B7009A35E2 /* SHOEntryTableViewController.m in Sources */,
 				4013E2F9191AE054009A35E2 /* SignupLoginViewController.m in Sources */,
 				4013E2B7191AD02D009A35E2 /* SHOAppDelegate.m in Sources */,
 				4013E30D191B025A009A35E2 /* SHOComposeViewController.m in Sources */,

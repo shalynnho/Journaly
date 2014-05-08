@@ -10,6 +10,9 @@
 
 @interface SHOEntryViewController ()
 
+@property (weak, nonatomic) IBOutlet UIScrollView *photoScrollView;
+@property (weak, nonatomic) IBOutlet UIView *entryContainerView;
+
 @end
 
 @implementation SHOEntryViewController
@@ -34,6 +37,18 @@
         [self showLoginPane];
     }
     
+}
+
+- (IBAction)toggleEntriesView:(id)sender {
+    UISegmentedControl* sc = (UISegmentedControl*)sender;
+    NSInteger segIndex = sc.selectedSegmentIndex;
+    if (segIndex == 0) { // Posts
+        [self.photoScrollView setHidden:YES];
+        [self.entryContainerView setHidden:NO];
+    } else { // Photos
+        [self.photoScrollView setHidden:NO];
+        [self.entryContainerView setHidden:YES];
+    }
 }
 
 - (void)showLoginPane {
