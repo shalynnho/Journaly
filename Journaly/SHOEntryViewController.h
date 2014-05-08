@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 #import "PhotoDetailViewController.h"
 #import "MBProgressHUD.h"
+#import "SHOEntryTableViewController.h"
 
 @interface SHOEntryViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, MBProgressHUDDelegate> {
     
@@ -17,10 +18,12 @@
     NSMutableArray *allImages;
     NSInteger segIndex;
     
+    SHOEntryTableViewController* childController;
+    UITableView* childTableView;
+    
 }
 
 - (IBAction)logOutButtonTapAction:(id)sender;
-- (IBAction)refreshPhotos:(id)sender;
 - (void)setUpImages:(NSArray *)images;
 - (void)buttonTouched:(id)sender;
 

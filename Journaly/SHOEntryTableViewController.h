@@ -10,4 +10,6 @@
 
 @interface SHOEntryTableViewController : UITableViewController
 
+@property (nonatomic, strong) NSMutableArray *postArray;
+
 @end

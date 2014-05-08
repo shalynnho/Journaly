@@ -40,10 +40,38 @@
     if (![PFUser currentUser]) { // No user logged in
         [self showLoginPane];
     } else {
+        
         if (segIndex == 1) {
             [self refreshPhotos:nil];
+        } else {
+            [self refreshPosts];
         }
     }
+}
+
+- (IBAction)refresh:(id)sender {
+    if (segIndex == 0) {
+        [childController.postArray removeAllObjects];
+        [self refreshPosts];
+    } else { // refresh photos
+        [self refreshPhotos:nil];
+    }
+}
+
+- (void)refreshPosts {
+    // Create a query
+    PFQuery *postQuery = [PFQuery queryWithClassName:@"JournalEntry"];
+    [postQuery orderByAscending:@"createdAt"];
+    
+    // Follow relationship
+    [postQuery whereKey:@"user" equalTo:[PFUser currentUser]];
+    
+    [postQuery findObjectsInBackgroundWithBlock:^(NSArray* objects, NSError *error) {
+        if (!error) {
+            childController.postArray = [NSMutableArray arrayWithArray:objects];           // Store results
+            [childTableView reloadData];   // Reload table
+        }
+    }];
 }
 
 - (IBAction)refreshPhotos:(id)sender {
@@ -150,7 +178,6 @@
             }
             
             // Remove and add from objects before this
-            NSLog(@"ALLIMAGES has %d photos.", allImages.count);
             [self setUpImages:allImages];
             
         } else {
@@ -360,6 +387,17 @@
     [self showLoginPane];
     //[self.navigationController popViewControllerAnimated:YES];
     //[self.navigationController popToRootViewControllerAnimated:NO];
+}
+
+#pragma mark Segue
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSString * segueName = segue.identifier;
+    if ([segueName isEqualToString: @"tableViewEmbedSegue"]) {
+        childController = (SHOEntryTableViewController*) [segue destinationViewController];
+        childTableView = (UITableView*) childController.view;
+    }
 }
 
 @end
